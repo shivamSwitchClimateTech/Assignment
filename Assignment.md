@@ -35,13 +35,12 @@ INSERT INTO master_fuels (fuel_type, fuel_name, unit, epa_factor, ipcc_factor, d
 ---
 
 ### Note: Populate EPA Factors
-I will give you a CSV file with the fuel_type, fuel_name, and unit for 10 fuels.
 
-You must research and find the EPA emission factor for each fuel.
+1- You must research and find the EPA emission factor for each fuel.
 
-Insert your calculated epa_factor into the master_fuels table.
+2- Insert your calculated epa_factor into the master_fuels table.
 
-If no factor is found, set it to 1 and mark it as a default in your table.
+3- If no factor is found, set it to 1 and mark it as a default in your table.
 
 ## 🎯 YOUR ASSIGNMENT: EPA STANDARD
 
