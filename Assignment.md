@@ -20,19 +20,28 @@ CREATE TABLE master_fuels (
 
 -- SAMPLE DATA I WILL INSERT FOR YOU
 INSERT INTO master_fuels (fuel_type, fuel_name, unit, epa_factor, ipcc_factor, defra_factor, ghg_factor) VALUES
-('Gaseous fuels', 'LPG', 'Litres (L)', 1.5549, 1.5549, 1.5549, 1.5549),
-('Gaseous fuels', 'Natural Gas', 'Cubic metres (m3)', 2.0344, 2.0344, 2.0344, 2.0344),
-('Liquid fuels', 'Gasoline', 'Litres (L)', 2.3920, 2.3920, 2.3920, 2.3920),
-('Liquid fuels', 'Diesel', 'Litres (L)', 2.6260, 2.6260, 2.6260, 2.6260),
-('Liquid fuels', 'Jet Kerosene', 'Litres (L)', 2.5197, 2.5197, 2.5197, 2.5197),
-('Solid fuels', 'Anthracite', 'tonne (metric ton) (t)', 2360.4928, 2360.4928, 2360.4928, 2360.4928),
-('Solid fuels', 'Bituminous Coal', 'tonne (metric ton) (t)', 2109.2028, 2109.2028, 2109.2028, 2109.2028),
-('Solid fuels', 'Sub-bituminous Coal', 'tonne (metric ton) (t)', 1800.0000, 1800.0000, 1800.0000, 1800.0000),
-('Solid fuels', 'Lignite', 'tonne (metric ton) (t)', 1200.0000, 1200.0000, 1200.0000, 1200.0000),
-('Solid fuels', 'Peat', 'tonne (metric ton) (t)', 1000.0000, 1000.0000, 1000.0000, 1000.0000);
+('Gaseous fuels', 'LPG', 'Litres (L)', NULL, NULL, NULL, NULL),
+('Gaseous fuels', 'Natural Gas', 'Cubic metres (m3)', NULL, NULL, NULL, NULL),
+('Liquid fuels', 'Gasoline', 'Litres (L)', NULL, NULL, NULL, NULL),
+('Liquid fuels', 'Diesel', 'Litres (L)', NULL, NULL, NULL, NULL),
+('Liquid fuels', 'Jet Kerosene', 'Litres (L)', NULL, NULL, NULL, NULL),
+('Solid fuels', 'Anthracite', 'tonne (metric ton) (t)', NULL, NULL, NULL, NULL),
+('Solid fuels', 'Bituminous Coal', 'tonne (metric ton) (t)', NULL, NULL, NULL, NULL),
+('Solid fuels', 'Sub-bituminous Coal', 'tonne (metric ton) (t)', NULL, NULL, NULL, NULL),
+('Solid fuels', 'Lignite', 'tonne (metric ton) (t)', NULL, NULL, NULL, NULL),
+('Solid fuels', 'Peat', 'tonne (metric ton) (t)', NULL, NULL, NULL, NULL);
 ```
 
 ---
+
+### Note: Populate EPA Factors
+I will give you a CSV file with the fuel_type, fuel_name, and unit for 10 fuels.
+
+You must research and find the EPA emission factor for each fuel.
+
+Insert your calculated epa_factor into the master_fuels table.
+
+If no factor is found, set it to 1 and mark it as a default in your table.
 
 ## 🎯 YOUR ASSIGNMENT: EPA STANDARD
 
